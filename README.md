@@ -1,4 +1,4 @@
-# 🛒 E-Commerce Platform
+# 🛒 TradeHive (Seamless synchronization for B2B trading)
 
 A full-stack, feature-rich e-commerce web application built using **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, **MongoDB**, and **Clerk Auth**. 
 
@@ -20,10 +20,10 @@ This project showcases a scalable architecture, modern UI/UX, admin dashboard, p
 
 ## 🧑‍💻 Tech Stack
 
-| Frontend        | Backend              | Other Tools          |
-|-----------------|----------------------|-----------------------|
-| React 19 (or 18)| Next.js API Routes   | Tailwind CSS          |
-| TypeScript      | SQL + MySQL + prisma | Clerk Authentication  |
+| Frontend        | Backend              | Other Tools               |
+|-----------------|----------------------|-----------------------    |
+| React 19 (or 18)| Next.js API Routes   | Tailwind CSS              |
+| TypeScript      | SQL + MySQL + prisma | Clerk Authentication      |
 | Next-Cloudinary | AWS (DEPLOY)         | Zustand / Redux (if used) |
 
 ---
@@ -38,8 +38,8 @@ Clerk API Key (for authentication)
 ## 🧑‍💻 Getting Started
 1. Clone the Repository
   	```bash
-  		git clone https://github.com/your-username/e-commerce-platform.git
-		cd e-commerce-platform
+  		git clone https://github.com/your-username/TradeHive.git
+		cd TradeHive
    
  2. Install Dependencies
 	Using npm:
@@ -102,7 +102,7 @@ Sign out and try accessing the dashboard to ensure redirection to the sign-in pa
 ## 📁 Folder Structure (example)
 
 ```bash
-e-commerce-platform/
+TradeHive/
 ├── app/
 │   ├── (auth)/
 │   │   ├── (routes)/
