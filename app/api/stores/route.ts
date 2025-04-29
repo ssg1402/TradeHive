@@ -8,15 +8,12 @@ export async function POST(
 ) {
     try {
         const auth = getAuth(req);
-    console.log("Auth Data:", auth);
-        
-        const user = await currentUser();
-        console.log("🟢 Current Clerk User:", user);
+        console.log("Auth Data:------------", auth);
 
         const body =  await req.json();
 
         const { name } = body;
-const { userId } = auth;
+        const { userId } = auth;
         if(!userId){
             return new NextResponse("Unauthorized", {status : 401});
         }

@@ -15,7 +15,7 @@ export default async function SetupLayout({
 
   const store = await prismadb.store.findFirst({
     where: {
-      userId: userId,
+      userId,
     },
   });
 

@@ -44,15 +44,10 @@ export const StoreModal = () => {
     try {
       setloading(true);
 
-      const token = localStorage.getItem("token");
+      const response = await axios.post("/api/stores", values);
+      console.log(response.data);
 
-      const response = await axios.post("/api/stores", values, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      toast.success("Store created successfully");
+      window.location.assign(`/${response.data.id}`);
     } catch (error) {
       toast.error("Something went wrong");
     } finally {
