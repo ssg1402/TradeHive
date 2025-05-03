@@ -11,15 +11,14 @@ export async function PATCH (
     try {
         const { userId } = await auth();
         const body = await req.json();
-
         const { name } = body;
-
+        console.log("Auth Data:->", userId, body, params.storeId);
         if(!userId) {
             return new NextResponse("Unauthenticated", { status: 401 });
         }
 
         if( !name ) {
-            return new NextResponse("Nmae is required", { status: 400 });
+            return new NextResponse("Name is required", { status: 400 });
         }
 
         if(!params.storeId) {
@@ -35,7 +34,7 @@ export async function PATCH (
                 name
             }
         })
-
+        return NextResponse.json(store)
     } catch (error) {
         console.log('[STORE_PATCH]', error);
         return new NextResponse("Internal error", { status: 401 });

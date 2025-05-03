@@ -1,6 +1,6 @@
 import prismadb from "@/lib/prismadb";
 
-import { PageProps } from "next";
+import PageProps from "next";
 import { BillboardForm } from "./components/billboard-form";
 
 interface BillBoardsPageProps {
