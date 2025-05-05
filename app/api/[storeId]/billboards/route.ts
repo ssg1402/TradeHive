@@ -4,6 +4,7 @@ import { getAuth } from "@clerk/nextjs/server";
 import prismadb from "@/lib/prismadb";
 
 export async function GET(
+    req: Request,
     { params }: {params: {storeId: string}}
 ) {
     try {
